@@ -1,0 +1,576 @@
+/*轮播部分的样式*/
+.banner-bd {
+    width: 100%;
+    min-width: 1190px;
+    height: 598px;
+    background-color: #f1f1f1;
+}
+
+.banner {
+    width: 1190px;
+    height: 598px;
+    padding-top: 10px;
+    margin: 0 auto;
+    /*background-color: red;*/
+}
+
+.banner-left {
+    width: 190px;
+    height: 511px;
+}
+
+.banner-left .theme-nav {
+    width: 190px;
+    margin-top: -44px;
+    background-color: #FF6537;
+    height: 515px;
+}
+
+.banner-left .pic {
+    width: 190px;
+    height: 40px;
+    background-color: yellow;
+}
+
+.banner-wrap {
+    width: 520px;
+    margin-left: 10px;
+    height: 511px;
+    background-color: pink;
+}
+
+.banner-wrap1 {
+    width: 520px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-btn {
+    display: none;
+}
+
+.banner-btn a {
+    display: block;
+    line-height: 36px;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    width: 24px;
+    height: 36px;
+    background-color: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    color: #fff;
+    overflow: hidden;
+    z-index: 4;
+}
+.banner-btn a.act{
+    opacity: .5;
+}
+.prevBtn {
+    left: 0;
+}
+
+.nextBtn {
+    right: 0;
+}
+
+/*.banner i {
+    background: url(http://gtms01.alicdn.com/tps/i1/T1szNBFzlmXXX8QSDI-400-340.png) no-repeat;
+    width: 15px;
+    height: 23px;
+    cursor: pointer;
+    margin: 8px 0 0 12px;
+    display: block;
+}
+
+.banner .nextBtn i {
+    background-position: -200px -24px;
+}
+
+.banner .prevBtn i {
+    background-position: -200px 0px;
+}*/
+
+.banner-img {
+    width: 3120px;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner-img li {
+    float: left;
+}
+
+.banner-circle {
+    position: absolute;
+    left: 50%;
+    margin-left: -39px;
+    bottom: 15px;
+    height: 13px;
+    text-align: center;
+    font-size: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    filter: alpha(opacity:30);
+}
+
+.banner-circle li {
+    border-radius: 10px;
+    margin: 2px;
+    padding-top: 9px;
+    width: 9px;
+    height: 0;
+    border-radius: 50%;
+    background: #B7B7B7;
+    display: inline-block;
+    display: -moz-inline-stack;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+/*.banner-circle li a {
+    display: block;
+    padding-top: 9px;
+    width: 9px;
+    height: 0;
+    border-radius: 50%;
+    background: #B7B7B7;
+    overflow: hidden;
+}*/
+
+.banner-circle .selected{
+    background: #F40;
+}
+
+.banner-right {
+    height: 100%;
+    width: 290px;
+    /*background-color: green;*/
+    background-color: #fff;
+}
+
+.banner-right .usermember {
+    width: 290px;
+    height: 153px;
+    color: #3c3c3c;
+    text-align: center;
+    padding-top: 15px;
+    background: url(../images/wrap/baner-rbg.png) no-repeat #f1f1f1;
+    background-size: 290px 168px;
+    border-bottom: 1px solid #eee;
+}
+
+.banner-right .usermember .tbh-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    background: url(../images/wrap/wrap-jl.png) no-repeat 0 -882px;
+}
+
+.banner-right .usermember a {
+    color: #f40;
+}
+
+.banner-right .usermember .mem-logout {
+    margin-top: 4px;
+}
+
+.banner-right .usermember .mem-logout a {
+    background-image: linear-gradient(-45deg, #ff5000, #ff6f06);
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.banner-right .usermember .mem-logout .btn-login {
+    width: 92px;
+}
+
+.banner-right .usermember .mem-logout .btn-rig,
+.banner-right .usermember .mem-logout .open-shop {
+    width: 75px;
+}
+
+.banner-right .notice {
+    height: 98px;
+    width: 290px;
+    margin-top: 1px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+}
+
+.banner-right .notice .notice-nav {
+    height: 24px;
+    padding-left: 4px;
+    margin-top: 4px;
+}
+
+.banner-right .notice .notice-nav li {
+    float: left;
+    height: 24px;
+    width: 39px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 8px;
+}
+
+.banner-right .notice .notice-nav li a {
+    color: #3C3C3C;
+}
+
+.banner-right .notice .notice-nav li a:hover {
+    color: #f40;
+}
+
+.banner-right .notice .notice-nav li.active {
+    border-bottom: 2px solid #f40;
+    font-weight: bold;
+}
+
+.banner-right .notice .notice-bd {
+    width: 290px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.banner-right .notice .notice-bd .a {
+    width: 280px;
+    height: 60px;
+    padding-left: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+.banner-right .notice .notice-bd .a li {
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    overflow: hidden;
+}
+
+.banner-right .notice .notice-bd .a li a {
+    color: #3c3c3c;
+}
+
+.banner-right .notice .notice-bd .a li a:hover {
+    color: #f40;
+}
+
+.banner-right .notice .notice-bd .notice-sel {
+    display: block;
+}
+
+.conve {
+    width: 290px;
+    height: 200px;
+    position: relative;
+    border-top: 1px solid #EAEAEA;
+}
+
+.conve .conve-list li {
+    width: 71px;
+    float: left;
+    height: 67px;
+    border: 1px solid #EAEAEA;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transition: border-color .1s;
+}
+
+.conve .conve-list li.min {
+    width: 70px;
+}
+
+.conve .conve-list li.first {
+    border-top: 1px solid #eaeaea;
+}
+
+.conve .conve-list li.on {
+    border-color: #f40;
+    position: relative;
+    z-index: 11;
+    border-bottom-color: transparent;
+}
+
+.conve .conve-list li.on a {
+    position: relative;
+    z-index: 11;
+    height: 69px;
+    background-color: #fff;
+}
+
+.conve .conve-list a {
+    padding-top: 1px;
+    text-align: center;
+    display: block;
+    color: #666;
+}
+
+.conve .conve-list .conve-list-items .conve-item-icon {
+    width: 24px;
+    height: 24px;
+    background: url(../images/wrap/wrap-jl.png) no-repeat;
+    display: inline-block;
+    margin-top: 11px;
+    /*margin-bottom: 5px;*/
+}
+
+.conve .conve-list .conve-list-items .icon1 {
+    background-position: 0 0;
+}
+
+.conve .conve-list .conve-list-items .icon2 {
+    background-position: 0 -44px;
+}
+
+.conve .conve-list .conve-list-items .icon3 {
+    background: url(../images/wrap/aa.jpg) no-repeat;
+}
+
+.conve .conve-list .conve-list-items .icon4 {
+    background-position: 0 -132px;
+}
+
+.conve .conve-list .conve-list-items .icon5 {
+    background-position: 0 -176px;
+}
+
+.conve .conve-list .conve-list-items .icon6 {
+    background-position: 0 -220px;
+}
+
+.conve .conve-list .conve-list-items .icon7 {
+    background-position: 0 -1052px;
+}
+
+.conve .conve-list .conve-list-items .icon8 {
+    background-position: 0 -308px;
+}
+
+.conve .conve-list .conve-list-items .icon9 {
+    background-position: 0 -352px;
+}
+
+.conve .conve-list .conve-list-items .icon10 {
+    background-position: 0 -396px;
+}
+
+.conve .conve-list .conve-list-items .icon11 {
+    background-position: 0 -440px;
+}
+
+.conve .conve-list .conve-list-items .icon12 {
+    background-position: 0 -1146px;
+}
+
+.conve-b {
+    position: absolute;
+    top: 68px;
+    width: 290px;
+    height: 152px;
+    overflow: hidden;
+    /*overflow: ;*/
+    background-color: #fff;
+    display: none;
+    z-index: 8;
+}
+
+.conve .conve-bd-box {
+    width: 273px;
+    height: 145px;
+    padding-top: 5px;
+    padding-left: 15px;
+    border: 1px solid #f40;
+}
+
+.conve-tabs {
+    height: 26px;
+    line-height: 26px;
+}
+
+.conve-tabs a {
+    padding: 3px 10px;
+    color: #666;
+}
+
+.conve-tabs a:hover {
+    color: #ff4300;
+}
+
+.conve-box {
+    width: 300px;
+    padding-top: 4px;
+    float: left;
+}
+
+.conve-box .conve-input {
+    width: 188px;
+    height: 24px;
+    border: 1px solid #ccc;
+}
+
+.conve-box .conve-input input {
+    width: 165px;
+    height: 16px;
+    line-height: 16px;
+    border: none;
+    outline: none;
+    padding: 4px 20px 4px 3px;
+    text-indent: 2px;
+    float: left;
+    font-size: 12px;
+}
+
+.conve-box .conve-input .conve-input-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    margin-left: -20px;
+    background-color: red;
+    background: url(../images/wrap/bb.png) no-repeat -24px 5px;
+}
+
+.conve-box .con1 {
+    position: relative;
+}
+
+.conve-box .con1 .history {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: -1px;
+    top: 24px;
+    border: 1px solid #ff7d27;
+    display: none;
+    z-index: 8;
+    background-color: #fff;
+    text-indent: 2px;
+}
+
+.conve-box .con1:hover {
+    border-color: #9c9c9c;
+    position: relative;
+    z-index: 5;
+}
+
+.conve-box .con1:hover .conve-input-icon {
+    background-position: -4px 5px;
+}
+
+.conve-box .conve-input .price {
+    background: url(../images/wrap/bb.png) no-repeat -24px -21px;
+}
+
+.conve-box .con2:hover {
+    border-color: #9c9c9c;
+}
+
+.conve-box .con2:hover .conve-input-icon {
+    background-position: -4px -21px;
+}
+
+.conve-box .con2 {
+    position: relative;
+}
+
+.conve-box .con2 .prices {
+    width: 100%;
+    /*height: 134px;*/
+    border: 1px solid #959595;
+    position: absolute;
+    left: -1px;
+    top: 24px;
+    background-color: #fff;
+    display: none;
+}
+
+.conve-box .con2 .prices .prices-list {
+    float: left;
+    width: 83px;
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    cursor: pointer;
+
+}
+
+.conve-box .con2 .prices .prices-list:hover {
+    color: #fc461e;
+    background-color: #ffece5;
+}
+
+.conve-box .con2 .prices .prices-list span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.conve-box .con2 .prices .brn {
+    border-right: none;
+}
+
+.conve-box .con2 .prices .bbn {
+    border-bottom: none;
+}
+
+.conve-box .price {
+    color: #666;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.conve-box .price .money {
+    color: #f60;
+    font-weight: bold;
+}
+
+.conve-box .buy {
+    padding-top: 5px;
+}
+
+.conve-box .buy a {
+    display: block;
+    float: left;
+    height: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 2px;
+    background-color: #f40;
+}
+
+.conve-box .buy a:hover {
+    background-color: #f22d00;
+}
+
+.conve-b .close {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.conve-b .close:hover {
+    background-color: #eee;
+}

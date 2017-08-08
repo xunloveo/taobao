@@ -1,0 +1,877 @@
+/*首页样式*/
+
+/*头部开始*/
+body{
+  /*  font-size: 12px;*/
+    background-color: #f1f1f1;
+   /* font-family: "'Hiragino Sans GB','\5b8b\4f53',sans-serif";*/
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-seri;
+}
+.top-nav-bd{
+    width: 100%;
+    min-width: 1190px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+.top-nav-bd .top-nav{
+    width: 1190px;
+    margin: 0 auto;
+    height: 35px;
+    background-color: #f5f5f5;
+
+}
+.top-nav .nav-menu{
+    float: left;
+    height: 36px;
+    line-height: 34px;
+    position: relative;
+}
+.top-nav .nav-menu-arrow:hover{
+    background-color: #fff;
+}
+.top-nav .nav-menu-arrow:hover .coll-icon{
+    background: url(../images/top/star_h.png) no-repeat;
+}
+.top-nav .nav-menu-arrow:hover .nav-menu-hd{
+    border: 1px solid #eee;
+}
+.top-nav .nav-menu-arrow:hover .nav-menu-bd{
+    display: block;
+}
+.top-nav .nav-menu a{
+    color: #6C6C6C;
+}
+.top-nav .nav-menu a:hover{
+    color: #f40;
+}
+.top-nav .nav-menu .nav-menu-hd{
+    height: 34px;
+    line-height: 34px;
+    padding: 0 6px;
+    border: 1px solid transparent;
+}
+.top-nav .nav-menu .nav-menu-bd{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+.top-nav .nav-menu .nav-arrow{
+    width: 6px;
+    display: inline-block;
+    height: 6px;
+    line-height: 6px;
+    margin-left: 10px;
+    position: relative;
+    top: -1px;
+    background: url(../images/top/arr_down.png) no-repeat;
+    overflow: hidden;
+}
+.top-nav .nav-menu .msg-icon,
+.top-nav .nav-menu .cart-icon,
+.top-nav .nav-menu .coll-icon,
+.top-nav .nav-menu .web-nav-icon{
+    display: inline-block;
+    background: url(../images/top/message.png) no-repeat;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    position: relative;
+    top: 2px;
+}
+.top-nav .nav-menu .cart-icon{
+    background: url(../images/top/cart.png) no-repeat;
+    top: 2px;
+}
+.top-nav .nav-menu .coll-icon{
+    background: url(../images/top/star.png) no-repeat;
+    top: 2px;
+}
+.top-nav .nav-menu .web-nav-icon{
+    background: url(../images/top/more.png) no-repeat;
+    top: 1px;
+}
+.top-nav .nav-menu .h{
+    color: #f22e00;
+}
+.top-nav .nav-menu .mesnum{
+    color: #FF5011;
+    margin-left: 4px;
+    margin-right: -4px;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel{
+    width: 248px;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel a{
+    color: #3c3c3c !important;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .user-image{
+    margin-right: 10px;
+    margin-left: 9px;
+    box-sizing: content-box;
+    width: 62px;
+    height: 62px;
+    padding: 9px;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .user-image img{
+    width: 56px;
+    height: 56px;
+    display: block;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .user-info{
+    text-align: right;
+    height: 20px;
+    line-height: 20px !important;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .pre{
+    line-height: 20px;
+    margin-top: 15px;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .pre a{
+    display: inline;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel  b{
+    color: red;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .user-info a{
+    display: inline;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel  a:hover{
+    color: #f40 !important;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .user-info .nav-pipe{
+        color: #ddd;
+        font-style: normal;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .bir-pri{
+    margin-top: 30px;
+    background-color: #e9fecf;
+    border: 1px solid #ddf6be;
+    border-radius: 2px;
+    height: 20px !important;
+    line-height: 20px !important;
+    width: 230px;
+    text-align: center;
+    margin-left: 5px;
+}
+.top-nav .nav-menu .nav-menu-bd .userpanel .bir-pri a{
+    display: inline;
+    line-height: 0;
+}
+.top-nav .nav-menu .nav-menu-bd .nav-menu-bd-panel{
+    padding: 8px;
+    border: 1px solid #eee;
+    border-top: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+.top-nav .nav-menu .nav-menu-bd .nav-menu-msgpanel{
+    width: 268px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 20px;
+    text-align: right;
+    position: absolute;
+    border: 1px solid #eee;
+    border-top: none;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #ddd;
+}
+.top-nav .nav-menu .nav-menu-bd .mtbo,
+.top-nav .nav-menu .nav-menu-bd .mcoll,
+.top-nav .nav-menu .nav-menu-bd .seller,
+.top-nav .nav-menu .nav-menu-bd .concat{
+    padding: 8px 0;
+}
+.top-nav .nav-menu .nav-menu-bd .nav-menu-bd-panel a{
+    display: block;
+    padding: 0 5px;
+    height: 28px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: #6c6c6c;
+}
+.top-nav .nav-menu .nav-menu-bd .nav-menu-bd-panel a:hover{
+    background-color: #F5F5F5;
+}
+.top-nav .nav-menu .nav-menu-bd .cart{
+    width: 296px;
+    line-height: 20px;
+    min-height: 40px;
+    text-align: right;
+}
+.top-nav .nav-menu .nav-menu-bd .cart a:hover{
+    background-color: #f40;
+}
+.top-nav .nav-menu .nav-menu-bd .cart .look{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #f40;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav{
+    border: 1px solid #eee;
+    border-top: none;    
+    position: absolute;
+    right: -106px;
+    left: auto;
+    top: 0;
+    width: 1188px;
+    min-height: 258px;
+    background-color: #fff;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav dl{
+    width: 24%;
+    float: left;
+    padding: 5px;
+    border-right: 1px solid #eee;
+    overflow: hidden;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav dt{
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 600;
+    overflow: hidden;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav dd{
+    width: 24%;
+    float: left;
+    padding-top: 5px;
+    height: 25px;
+    overflow: hidden;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .spe-market dd{
+    width: 33%;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .aiapp dd{
+    width: 33%;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .others{
+    border-right: 0;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .others dd{
+    width: 48%;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav dd a{
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 8px;
+    margin: 0 2px;
+    float: left;
+    color: #3c3c3c;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav i{
+    display: block;
+    width: 9px;
+    height: 14px;
+    top: -5px;
+    right: 0;
+    position: absolute;
+
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .hot{
+    background: url(../images/top/h.gif) no-repeat;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .new{
+    background: url(../images/top/n.gif) no-repeat;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav  a:hover{
+    color: #fff;
+    border-radius: 2px;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .theme-market a:hover{
+    background-color: #fc4200;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .spe-market a:hover{
+    background-color: #9fb838;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .aiapp a:hover{
+    background-color: #d75696;
+}
+.top-nav .nav-menu .nav-menu-bd .web-nav .others a:hover{
+    background-color: #2e9fdb
+}
+
+.top-nav .nav-line{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5px;
+    float: left;
+    color: #ddd;
+}
+
+/*logo,搜索框,以及热词开始*/
+.logo-search-bd{
+    width: 100%;
+    min-width: 1190px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.logo-search{
+    width: 1190px;
+    margin: 0 auto;
+    height: 99px;
+    padding-top: 30px;
+    position: relative;
+}
+.logo-search .logo{
+    margin-top: 8px;
+}
+.logo-search .search-wrap{
+    margin-left: 265px;
+    margin-right: 300px;
+}
+.logo-search .search-bd .search-tab{
+    height: 25px;
+}
+.search-bd .search-tab li{
+    float: left;
+    text-align: center;
+    width: 50px;
+    color: #f40;
+    line-height: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.search-bd .search-tab li:hover{
+    background-color: pink;
+}
+.search-bd .search-tab li.selected{
+    color: #fff;
+    background-color: #FF5400;
+    font-weight: bold;
+}
+.search-bd .search-tab li.selected1{
+    color: #fff;
+    background-color: #C60000;
+    font-weight: bold;
+}
+.logo-search-bd .search-box{
+    width: 625px;
+    height: 40px;
+   /* background-color: red;*/
+}
+
+.logo-search-bd .search-box .search-inp{
+    width: 500px;
+    height: 34px;
+    border: 3px solid #f50;
+    border-right: 0;
+    background-color: #fff;
+    position: relative;
+}
+.logo-search-bd .search-box .search-inp-borcol{
+    border-color: #C60000;
+}
+.logo-search-bd .search-box .search-inp input{
+    padding: 6px 0;
+    height: 22px;
+    line-height: 22px;
+    width: 472px;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+}
+.logo-search-bd  .search-box .search-inp .search-icon{
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 15px;
+    top: 10px;
+    background: url(../images/top/search.png) no-repeat;
+}
+.logo-search-bd .search-box .search-inp .camera{
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    right: 5px;
+    top: 10px;
+    cursor: pointer;
+    background: url(../images/top/camera.png) no-repeat;
+}
+.logo-search-bd .search-box .search-inp .camera:hover{
+    background-position: -22px top;
+}
+.logo-search-bd .search-box .search-inp label{
+    position: absolute;
+    color: #666;
+    left: 34px;
+    top: 8px;
+}
+
+.logo-search-bd .search-box .search-inp .search-recen{
+    position: absolute;
+    width: 620px;
+    border: 1px solid #bebebe;
+    min-height: 28px;
+    left: 0;
+    top: 34px;
+    background-color: #fff;
+    z-index: 99999;
+    color: #1071a8;
+    display: none;
+}
+.logo-search-bd .search-box .search-inp .search-recen p{
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.logo-search-bd .search-box .search-inp .search-recen p:hover{
+    background-color: #eee;
+}
+.logo-search-bd .search-box .search-inp .search-recen p:hover span{
+    display: block;
+}
+.logo-search-bd .search-box .search-inp .search-recen .title{
+    color: #a5a5a5;
+    cursor: default;
+}
+.logo-search-bd .search-box .search-inp .search-recen .title:hover{
+    background-color: #fff;
+}
+.logo-search-bd .search-box .search-inp .search-recen .del{
+    float: right;
+    margin-right: 5px;
+    line-height: 28px;
+    display: block;
+    cursor: pointer;
+    color: #666;
+    display: none;
+}
+.logo-search-bd .search-box .search-inp .search-recen .del:hover{
+    color: #f40;
+}
+.logo-search-bd .search-box .search-btn button{
+    width: 122px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    background-color: #FF4200;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+.logo-search-bd .search-box .search-btn .btnbg{
+    background-color: #c40000;
+}
+.search-wrap .hotwords{
+    margin-top: 8px;
+    height: 18px;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+.search-wrap .hotwords div{
+    height: 18px;
+    line-height: 18px;
+}
+.search-wrap .hotwords a{
+    color: #666;
+    margin-right: 5px;
+}
+.search-wrap .hotwords a:hover{
+    color: #f40;
+}
+.search-wrap .hotwords a.chose{
+    color: #f40;
+}
+.search-wrap .hotwords a.chose1{
+    color: #c60000;
+}
+.search-wrap .hotwords a.more{
+    position: absolute;
+    right: 0;
+}
+.mini{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+.logo-mini-search{
+    width: 1190px;
+    height: 35px;
+    margin: 0 auto;
+    padding: 5px 0;
+    background-color: #fff;
+}
+.logo-mini-search .mini-logo{
+    width: 80px;
+    float: left;
+}
+.mini .logo-mini-search .search-combox .search-inp{
+    height: 29px;
+}
+.mini .logo-mini-search .search-combox .search-inp input{
+    width: 399px;
+    height: 17px;
+    margin-left: 73px;
+}
+.mini .search-box .search-inp .camera{
+    top: 8px;
+}
+.mini  .search-box .search-inp .search-icon{
+    left: 80px;
+    top: 8px;
+}
+.mini  .search-box .search-inp label{
+    left: 100px;
+    top: 6px;
+}
+.mini .logo-mini-search .search-combox .search-btn button{
+    height: 35px;
+    line-height: 35px;
+}
+.logo-mini-search .search-box{
+    margin-left: 183px;
+}
+.logo-mini-search .search-combox{
+    position: relative;
+}
+.logo-mini-search .search-tabs{
+    height: 27px;
+    border: 1px solid #e5e5e5;
+    width: 73px;
+    left: 3px;
+    top: 3px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 100;
+    cursor: pointer;
+}
+.logo-mini-search .search-tabs:hover{
+    overflow: visible;
+}
+.logo-mini-search .search-tabs .search-nav li{
+    background-color: #f6f6f6;
+    line-height: 29px;
+    width: 73px;
+    text-align: center;
+    color: #f40;
+}
+.logo-mini-search .search-tabs .search-nav li.sel{
+    color: #000;
+}
+.logo-mini-search .search-tabs .search-tabs-icon{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    background: url(../images/top/arr_down.png) no-repeat;
+}
+
+
+.erw{
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.erw .close{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border: 1px solid #eee;
+    top: 0;
+    left: -13px;
+    cursor: pointer;
+    background: url(../images/top/close.png) no-repeat;
+}
+.ewm a{
+    display: block;
+    width: 94px;
+    padding-top: 4px;
+    height: 108px;
+    color: #f40;
+    text-align: center;
+    border: 1px solid #eee;
+}
+.ewm a img{
+    width: 80px;
+    height: 80px;
+}
+
+/*导航开始*/
+.nav-tips-bd{
+    width: 100%;
+    min-width: 1190px;
+    padding-top: 5px;
+    background-color: #fff;
+    padding-bottom: 1px;
+}
+.nav-tips{
+    height: 34px;
+    padding-left: 200px;
+    width: 990px;
+    margin: 0 auto;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-tips a{
+    display: block;
+    float:  left;
+    padding:0 5px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 7px;
+    color: #3C3C3C;
+}
+.nav-tips .tip1{
+    padding: 0 10px;
+    font-size: 16px;
+}
+.nav-tips a:hover{
+    border-radius: 20px;
+    background-color: #FF6537;
+    color: #fff;
+}
+
+.nav-tips .colf40{
+    color: #f40;
+}
+.nav-tips .sep{
+    float: left;
+    padding-top: 2px;
+    color: #ddd;
+    margin-left: 6px;
+}
+
+
+/*右边的广告图开始*/
+.top-ad{
+    position: fixed;
+    top: 36px;
+    right: 0;
+    height: 240px;
+    width: 240px;
+}
+.top-ad img{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.top-ad .big{
+    opacity: 0;
+    position: absolute;
+}
+.top-ad span{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 20px 0 0 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #e5e5e5;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.top-bigad-bd{
+    width: 100%;
+    min-width: 1190px;
+    height: 70px;
+    background-color: #fff;
+}
+.top-bigad{
+    width: 1190px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+.top-bigad img{
+    position: absolute;
+}
+.top-bigad .close-ad{
+    width: 12px;
+    height: 12px;
+    display: block;
+    border: 1px solid #eee;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+   background: url(../images/top/close.png) no-repeat;
+}
+
+.countdown{
+    position: fixed;
+    z-index: 20;
+    top: 85px;
+    left: 3px;
+    width: 68px;
+    border: 3px solid #FF5011;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 700;
+    background: #ff4200;
+    color: #fff;
+    border-radius: 4px;
+}
+.countdown-bd  img{
+    width: 50px;
+    height: 50px;
+    top:40px;
+    left: 18px;
+    position: fixed;
+}
+.countdown span{
+    color: #f90013;
+    top: 70px;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: #440106;
+    width: 35px;
+    height: 37px;
+    text-align: center;
+    border-radius: 3px;
+}
+.countdown b{
+    font-size: 30px;
+}
+.countdown i{
+    font-size: 24px;
+    font-style: normal;
+}
+
+/*底部分界线*/
+.footer-fir{
+    height: 170px;
+    padding-top: 68px;
+}
+.footer-fir ul{
+    text-align: center;
+    width: 1190px;
+    margin: 0 auto;
+
+}
+.footer-fir ul li{
+    list-style: none;
+    float: left;
+    width: 210px;
+    height: 115px;
+    margin-right: 30px;
+    text-align: left;
+    padding-left: 57px;
+}
+.footer-fir ul li i img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.footer-fir ul li span{
+    display: block;
+    width: 200px;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.footer-fir ul li span a{
+    color: #969696;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 12px;
+}
+.footer-fir ul li span a:hover{
+    color: orangered;
+}
+.footer-h{
+    font-size: 18px;
+    color: #3c3c3c;
+}
+.footer-sec-bd{
+    width: 100%;
+    min-width: 1190px;
+    background-color: #fff;
+    height: 308px;
+}
+.footer-sec{
+    background: #fff;
+    width: 1190px;
+    margin: 0 auto;
+}
+.footer-cp{
+    height: 68px;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+    line-height: 20px;
+    text-align: center;
+    width: 1190px;
+    margin: auto;
+}
+.footer-cp p span a{
+    color: #969696;
+    font-size: 12px;
+    line-height: 27px;
+}
+.footer-cp p span a:hover{
+    color: orangered;
+}
+.footer-cp p b{
+    margin: 0 5px;
+    color:#C5C5C5;
+    font-weight: 400;
+}
+.footer-about{
+    width: 1190px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    margin: auto;
+    line-height: 20px;
+    height: 68px;
+    padding-top: 12px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer-about span{
+    margin-right: 10px;
+    color: #c1c1c1;
+}
+.footer-about p span a{
+    color: #969696;
+}
+.footer-about p span a:hover{
+    color: orangered;
+}
+.footer-about b{
+    /*	margin: 0 5px;*/
+    color: #c1c1c1;
+    font-weight: 400;
+}
+.footer-about i{
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+.footer-pls{
+    width: 1190px;
+    margin: 0 auto;
+    text-align: left;
+}
+.footer-pls p a img{
+    margin-right: 10px;
+}

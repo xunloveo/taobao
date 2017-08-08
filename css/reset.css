@@ -1,0 +1,28 @@
+/*基本样式*/
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,dt,form,th,td,p,li,button,input{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*清除浮动*/
+.clearfix:before ,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}

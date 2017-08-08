@@ -1,0 +1,95 @@
+/*侧边导航*/
+.aside-nav-bd{
+    min-height: 0;
+    background-color: #fff;
+}
+.aside-nav{
+    width: 50px;
+    right: 50%;
+    text-align: center;
+    background-color: #fff;
+    margin-right: -655px;
+}
+.aside-nav a{
+    display: block;
+    height: 44px;
+    position: relative;
+    text-decoration: none;
+    padding: 6px 8px 0;
+    font-size: 14px;
+    line-height: 40px;
+    transition: all .5s;
+}
+.aside-nav a.on,
+.aside-nav a:hover{
+    color: #fff;
+    background-repeat: no-repeat;
+    background-color: #f40;
+}
+.aside-nav a:after{
+    content: '';
+    border-bottom: 1px solid #efefef;
+    width: 34px;
+    position: absolute;
+    left: 8px;
+    bottom: -1px;
+}
+.aside-nav .aside-nav-list1,
+.aside-nav .aside-nav-list6,
+.aside-nav .aside-nav-list7,
+.aside-nav .aside-nav-list9{
+    line-height: 17px;
+    font-size: 13px
+}
+.aside-nav .aside-nav-list7,
+.aside-nav .aside-nav-list8,
+.aside-nav .aside-nav-list9{
+    color: #3c3c3c;
+    font-size: 12px;
+}
+
+.aside-nav .aside-nav-list1.on,
+.aside-nav .aside-nav-list1:hover{
+    background: url(../images/wrap/wrap-jl.png) no-repeat 0 -1086px;
+}
+.aside-nav .aside-nav-list1{
+    padding-top: 10px;
+    height: 40px;
+    color: #f40;
+    transition: all 0s;
+}
+.aside-nav .aside-nav-list3{
+    color: #f05;
+}
+.aside-nav .aside-nav-list3.on,
+.aside-nav .aside-nav-list3:hover{
+    background: url(../images/wrap/fashion.jpg);
+}
+.aside-nav .aside-nav-list4{
+    color: #8d7afb;
+}
+.aside-nav .aside-nav-list4.on,
+.aside-nav .aside-nav-list4:hover{
+    background: url(../images/wrap/pz.jpg);
+}
+.aside-nav .aside-nav-list5{
+    color: #A8C001;
+}
+.aside-nav .aside-nav-list5.on,
+.aside-nav .aside-nav-list5:hover{
+    background: url(../images/wrap/sh.jpg);
+}
+.aside-nav .aside-nav-list2{
+     color: #a2745b;
+ }
+.aside-nav .aside-nav-list2.on,
+.aside-nav .aside-nav-list2:hover{
+    background: url(../images/wrap/ts.jpg);
+}
+.aside-nav .aside-nav-list6{
+    color: #F40;
+}
+.aside-nav .aside-nav-list6.on,
+.aside-nav .aside-nav-list6:hover{
+    background: url(../images/wrap/like.jpg);
+}

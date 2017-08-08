@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人物介绍</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "microsoft yahei";
+        }
+        li{
+            list-style: none;
+            float: left;
+        }
+        .person{
+            width: 415px;
+            height: 42px;
+           /* border: 1px solid #eee;*/
+            position: relative;
+            background-color: #fff;
+            margin: 100px auto;
+            margin-bottom: 0;
+        }
+        .person ul{
+            position: absolute;
+        }
+        .person .cloud{
+            width: 83px;
+            height: 42px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url("images/top/cloud.gif") no-repeat;
+        }
+        .person li{
+            width: 83px;
+            height: 42px;
+            line-height: 42px;
+            float: left;
+            text-align: center;
+            color: #000;
+            cursor: pointer;
+            font-size:  20px;
+        }
+        .person-desc{
+            width: 416px;
+            /*height: 202px;*/
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .desc{
+            width: 414px;
+            /*height: 200px;*/
+            border: 1px solid red;
+        }
+        .desc img{
+            width: 207px;
+            height: 200px;
+        }
+        .desc p{
+            line-height: 30px;
+        }
+        .star{
+            cursor: pointer;
+            font-size: 20px;
+            color: red;
+            clear: both;
+        }
+        .comm{
+            clear: left;
+        }
+        .keyword{
+            color: #F3C207;
+            font-size:  20px;
+            font-style: italic;
+        }
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.color-2.1.2.min.js"></script>
+    <script>
+        $(function(){
+            var target = 0;
+            var current = 0; // 用于存放当前点击的offsetLeft
+            $(".person ul").on("mouseenter","li",function(){
+                console.log(this.offsetLeft);
+                target = this.offsetLeft;
+                move();
+            }).on("mouseleave","li",function () {
+                // 鼠标离开回到上一个点击的位置
+                target = current;
+                move();
+            }).on("click","li",function () {
+                // 点击的时候获取当前的位置
+                current = this.offsetLeft;
+                //move();
+                count = $(this).index();
+                $(".person-desc .desc").eq($(this).index()).show().siblings().hide();
+            });
+            // 图片做动画
+            function move(){
+
+                    $(".cloud").stop(true,true).animate(
+                        {
+                            "left": target
+                        }
+                        ,500);
+                }
+
+
+            // 实现星级评分
+            // 第一步是鼠标移到事件 当移到的时候自己和前面的变为实心后面的为空心
+
+                $(".star").on("mouseenter","li",function(){
+                    $(this).html("★")
+                        .prevAll().html("★")
+                        .end()
+                        .nextAll().html("☆");
+                }).on("click","li",function () {
+                    //第二步 首先记录点击的是哪个 用一个类或者属性记录然后自己和前面的变为实心后面的为空心
+                    $(this).addClass("selected")
+                        .siblings().removeClass("selected");
+
+                    $(this).parents(".desc").find(".comm").html("您的评语是：" + arr[$(this).index()+ 1]);
+
+
+                }).on("mouseleave","li",function () {
+                    // 当没有点击五角星的时候 鼠标移开 为空心
+                    $(".star").find("li").html("☆");
+                    //第三步 当鼠标移开ul的时候把设置为selected和前面的变为实心后面的为空心
+                    $(".selected").html("★")
+                        .prevAll().html("★")
+                        .end()
+                        .nextAll().html("☆");
+
+
+                });
+                var count = 0;
+                var arr = ["您还没有评语哦！","您的技术很垃圾!","您的技术一般","您的技术不错哦！","您是技术高手！","您是个技术大神呀！！！"];
+                // 评语
+                $(".comm").html(arr[0]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <div class="person">
+        <span class="cloud"></span>
+        <ul>
+            <li>谢世勋</li>
+            <li>曾  可</li>
+            <li>卢  渊</li>
+            <li>刘  杰</li>
+            <li>徐杨波</li>
+        </ul>
+    </div>
+    <div class="person-desc">
+        <div class="desc" style="display: block;">
+            <p>职位: 组长 项目经理</p>
+            <p>主要负责内容: 代码布局 整合 头部 搜索框 倒计时 侧边栏</p>
+            <p>关键词: <span class="keyword">帅气 和蔼 活泼 开朗</span></p>
+            <p><img src="images/person/psb.jpg" alt=""><img src="images/person/quan.jpg" alt=""></p>
+            <ul class="star">
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+            </ul>
+            <p class="comm"></p>
+        </div>
+        <div class="desc" style="display: none;">
+            <p>职位: 组员 技术牛人</p>
+            <p>主要负责内容: 大banner部分、级联菜单、图片轮播</p>
+            <p>关键词: <span class="keyword">颜帝 阳光小男孩</span></p>
+            <ul class="star">
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+            </ul>
+            <p class="comm"></p>
+        </div>
+        <div class="desc" style="display: none;">
+            <p>职位: 组员 idea大咖</p>
+            <p>主要负责内容: idea的构思、底部的制作</p>
+            <p>关键词: <span class="keyword">构思之王 审美大神</span></p>
+            <ul class="star">
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+            </ul>
+            <p class="comm"></p>
+        </div>
+        <div class="desc" style="display: none;">
+            <p>职位: 组员 技术牛人</p>
+            <p>主要负责内容: 中间内容的前半部分</p>
+            <p>关键词: <span class="keyword">社会我杰哥</span></p>
+            <ul class="star">
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+            </ul>
+            <p class="comm"></p>
+        </div>
+        <div class="desc" style="display: none;">
+            <p>职位: 组员 技术牛人</p>
+            <p>主要负责内容: 中间内容的后半部分</p>
+            <p>关键词: <span class="keyword">波神巨无霸</span></p>
+            <ul class="star">
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+            </ul>
+            <p class="comm"></p>
+        </div>
+    </div>
+</body>
+</html>

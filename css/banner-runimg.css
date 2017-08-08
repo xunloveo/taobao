@@ -1,0 +1,119 @@
+.banner-runimg{
+    width: 520px;
+    height:510px;
+    margin-left: 10px;
+    float: left;
+}
+#box1 {
+    width: 520px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+#box2-hd{
+    width: 520px;
+    font-size: 14px;
+    height: 28px;
+    border-bottom: 2px solid #c12c26;
+    position: relative;
+    font-weight: bold;
+    line-height: 24px;
+}
+#box2-hd p{
+    position: relative;
+    bottom: -8px;
+}
+#box2-bd{
+    width: 520px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+#box2-bd .sp li{
+    display: block;
+    width: 520px;
+    height: 200px;
+    background: white;
+    position: absolute;
+}
+#box2-bd .sp li:nth-of-type(1) img,#box2-bd .sp li:nth-of-type(3) img,#box2-bd .sp li:nth-of-type(5) img{
+    margin-top: 22px;
+    margin-left: 7px;
+    float: left;
+}
+#box2-bd .sp li:nth-of-type(2) img,#box2-bd .sp li:nth-of-type(4) img{
+    float: left;
+}
+#box2-bd .sp li:nth-of-type(6) img{
+    float: left;
+    padding: 10px 20px 11px 19px;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/**
+    run_img css共用设置
+ */
+.sp li {
+    position: absolute;
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.prev {
+    left: 0px;
+}
+ .btn a {
+    width: 24px;
+    height: 36px;
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    color: white;
+    text-align: center;
+    display: none;
+    line-height: 36px;
+}
+
+.next {
+    right: 0px;
+
+}
+
+.circle {
+    position: absolute;
+    left: 182px;
+    height: 13px;
+    bottom: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    line-height: 13px;
+}
+
+.circle li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 9px;
+    height: 9px;
+    margin: 2px;
+    border-radius: 50%;
+    background: #B7B7B7;;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.circle .selected {
+    background: #F40;
+}
+
+.sp {
+    display: block;
+    position: absolute;
+}
